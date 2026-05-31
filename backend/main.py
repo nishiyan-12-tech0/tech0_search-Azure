@@ -37,7 +37,7 @@ app = FastAPI(
 # CORS_ORIGINS 環境変数でカンマ区切りに複数指定可能。
 _raw_origins = os.environ.get(
     "CORS_ORIGINS",
-    "http://localhost:3000",          # デフォルト: ローカル開発
+    "https://tech0-search-api-nishiyan-hzfkh4enaravhdbf.southeastasia-01.azurewebsites.net",          # デフォルト: ローカル開発
 )
 ALLOWED_ORIGINS = [o.strip() for o in _raw_origins.split(",") if o.strip()]
 
