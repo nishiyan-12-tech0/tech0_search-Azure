@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 
 load_dotenv()  # .env ファイルを読み込む
 
-USE_MYSQL: bool = os.environ.get("USE_MYSQL", "false").lower() == "true"
+USE_MYSQL= True
 
 
 def get_connection():
@@ -74,7 +74,7 @@ def _get_mysql_connection():
         database=os.environ["DB_NAME"],
         charset="utf8mb4",
         cursorclass=pymysql.cursors.DictCursor,
-        ssl={"ssl_disabled": False},          # Azure MySQL は SSL 必須
+        #ssl={"ssl_disabled": False},          # Azure MySQL は SSL 必須
         connect_timeout=10,
     )
 
