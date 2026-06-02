@@ -17,7 +17,7 @@ import SearchBox from "./components/SearchBox";
 import ResultCard from "./components/ResultCard";
 import { SearchResult, SearchResponse } from "@/types";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API_URL = "https://tech0-search-api-nishiyan-hzfkh4enaravhdbf.southeastasia-01.azurewebsites.net";
 
 export default function SearchPage() {
   // ── State ──────────────────────────────────
